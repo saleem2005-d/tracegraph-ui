@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -22,3 +23,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+=======
+.env
+.env.local
+__pycache__/
+*.pyc
+.venv/
+>>>>>>> 644c08a (fix(cors): allow all origins for vercel integration)

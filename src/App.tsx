@@ -45,7 +45,7 @@ const CustomGraphNode = ({ data }: { data: any }) => {
   };
 
   return (
-    <div className={`px-3 py-2 rounded-lg border text-[11px] font-mono shadow-md min-w-[125px] text-center transition-all duration-700 ${getBadgeStyle()}`}>
+    <div className={`px-3 py-2 rounded-lg border text-[11px] font-mono shadow-md min-w-full max-w-full text-center transition-all duration-700 ${getBadgeStyle()}`}>
       <Handle type="target" position={Position.Left} className="!bg-slate-400 !w-2 !h-2" />
       <div className="font-bold text-[10px] tracking-wider uppercase">{data.label}</div>
       <div className="text-[9px] text-slate-300 mt-0.5 font-sans">
@@ -333,7 +333,7 @@ export default function App() {
       </header>
 
       {/* KPI Dashboard Ribbon */}
-      <div className="px-5 pt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="px-5 pt-4 grid grid-cols-2 md:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="bg-[#0B1021] border border-slate-800/80 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
           <div>
             <div className="text-[10px] font-mono uppercase tracking-wider text-slate-400">Fraud Cases Ingested</div>
@@ -376,7 +376,7 @@ export default function App() {
       </div>
 
       {/* Main Command Workspace */}
-      <main className="flex-1 p-5 grid grid-cols-12 gap-5">
+      <main className="flex-1 p-5 grid grid-cols-1 lg:grid-cols-12 gap-5">
         {/* Left Column (4 cols) */}
         <div className="col-span-12 lg:col-span-4 space-y-4 flex flex-col">
           {/* Incident Ingestion Box */}
