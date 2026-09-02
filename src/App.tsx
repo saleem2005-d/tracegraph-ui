@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { 
-  ShieldAlert, Activity, Radio, MapPin, Zap, AlertTriangle, 
-  Lock, Clock, CheckCircle2, ShieldCheck, TrendingUp, IndianRupee,
-  Timer, Users, Cpu, FileText, CheckCircle, Info, Sparkles, ArrowRight
+  ShieldAlert, Activity, MapPin, Zap, AlertTriangle, 
+  Lock, Clock, ShieldCheck, TrendingUp, IndianRupee,
+  Timer, Users, Cpu, CheckCircle, Sparkles
 } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup, Circle, useMap } from 'react-leaflet';
 import L from 'leaflet';
